@@ -16,14 +16,15 @@
             <?php $premier_league = array('chelsea', 'manchester city', 'manchester united', 'tottenham', 'arsenal', 'liverpool', 'leicester'); ?>
             
             <?php $i = 0; ?>
-            <?php while($i <= count($premier_league)) {
-              if(count($premier_league) > 0 ) {
-                    echo $premier_league[$i] . '<br/>';
-                    if($i+1 === count($premier_league)) {
-                      echo "fin";
-                    }
-              } else {
-                echo "no hay resultados";
+
+            <?php while ($i <= count($premier_league )) {
+              if (count($premier_league) > 0) {
+              echo $premier_league[$i] . '<br/>';
+              if ($i+1 === count($premier_league)) {
+                echo "fin";
+              }
+              }else {
+                echo 'No hay resultados';
               }
               $i++;
             } ?>
