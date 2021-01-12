@@ -15,7 +15,7 @@
         <div class="contenido">
               <h2>Agenda Teléfonica</h2>
             <?php 
-              function usuario($nombre = 'John Doe', $tel = '000000000') {
+              function usuario($nombre = 'John Doe', $tel = '000052800') {
                   return $contacto = $nombre . " " . $tel;
               }
               
@@ -23,7 +23,7 @@
               echo $usuario;
               echo "<hr>";
               
-              $usuario2 = usuario("Miguel");
+              $usuario2 = usuario("marlon");
               echo $usuario2;
               
             ?>
