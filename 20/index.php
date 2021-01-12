@@ -15,17 +15,15 @@
         <div class="contenido">
               <h2>Agenda Teléfonica</h2>
             <?php 
-              function usuario($nombre, $tel) {
-                  echo $nombre . "<br/>";
-                  echo $tel . "<br/>";
-                  echo "<hr>";
+              function usuario($nombre, $telf) {
+                echo $nombre . '<br/>'; 
+                echo $telf . '<br/>';
+                echo '<hr>';
+
               }
-              
-              usuario('Juan Pablo', '1234-1234');
-              
-              usuario('Miguel', '9876-9876');
-              
-              usuario('Alma', '4567-4567');
+              usuario('Marlon mora ', '12364-1234');
+              usuario('miguel', '12364-1253');
+              usuario('jorge', '1278524-12');
               
             ?>
               

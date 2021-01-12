@@ -13,16 +13,17 @@
       <h1>Aprendiendo PHP</h1>
 
         <div class="contenido">
-              <h2>Agenda Teléfonica</h2>
+              <h2>Agenda telefonica</h2>
             <?php 
-              function usuario() {
-                echo "Juan Pablo <br/>";
-                echo "1234-1234 <br/>";
-              }
-              
-              usuario();
-              
+             
+              function usuario()
+             {
+               echo 'Marlon mora <br/>'; 
+               echo '314526789 <br/>';
+             }
+             usuario();
             ?>
+          
               
         </div>
     </div>
