@@ -18,10 +18,9 @@
               function usuario($nombre, $tel) {
                   return $contacto = $nombre . " " . $tel;
               }
-              
-              $usuario = usuario('Juan Pablo', '1234-1234');
+              $usuario = usuario('Marlon mora', '314462');
+               
               echo $usuario;
-              
             ?>
               
         </div>
