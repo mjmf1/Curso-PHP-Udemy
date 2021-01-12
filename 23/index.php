@@ -42,6 +42,31 @@
               ?>
               
             
+              <?php  /* <?php
+              
+              $agenda = array();
+              
+              function guardarUsuario($nombre , $tel){
+                global $agenda;
+                $agenda[]= array($nombre, $tel);
+              }
+              guardarUsuario('Marlon' , '1234');
+              guardarUsuario('ana' , '1236');
+              guardarUsuario('jose' , '1235');
+
+              function mostarUsuario($id){
+                global $agenda;
+                $usuario = $agenda[$id];
+
+                foreach($usuario as $user){
+                  echo $user . '<br/>';
+                }
+                
+              }
+
+              mostarUsuario(0)
+              
+           */   ?>
               
         </div>
     </div>
