@@ -29,6 +29,7 @@
           } ?>   
 
           <hr>  
+
            <?php // validar chekcbox (singular) ?>
  
            <?php if (isset($_POST['notificaciones'])) {
@@ -38,6 +39,8 @@
              }
            }
            ?>
+
+           
            
            <?php //validar array de checkboxes ?>
 
@@ -51,8 +54,32 @@
            }else {
              echo 'no has elegido ningun curso';
            }
-           ?>
+           ?> 
+          
+           <hr>
 
+         
+         <?php   // validar select ?>
+
+         <?php  if (isset($_POST['area'])) {
+          $area = $_POST['area'];
+          echo '<h2>Area de especializacion</h2>';
+          switch ($area) {
+            case 'fe':
+              echo 'Front End';
+              break;
+              case 'be':
+                echo 'Back End';
+                break;
+                case 'fs':
+                  echo 'Full Stack';
+                  break;
+
+                  default:
+              echo 'Por favor elegi un area';
+                    break;
+          }
+         } ?>
     </div>
   </body>
 </html>
