@@ -109,7 +109,19 @@
        }else {
          echo 'no elegiste tipo de curso';
        } ?>
+       <hr>
+   
+   <?php   //validar textarea?>
 
+   <h2>Mensaje</h2>
+   <?php if(isset($_POST['mensaje'])){
+     $mensaje = $_POST['mensaje'];
+     if(strlen($mensaje) > 0 && trim($mensaje)){
+       echo $mensaje;
+     } else {
+       echo 'el mensaje esta vacio';
+     }
+   } ?>
        
     </div>
   </body>
