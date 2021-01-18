@@ -68,18 +68,49 @@
             case 'fe':
               echo 'Front End';
               break;
-              case 'be':
-                echo 'Back End';
-                break;
-                case 'fs':
-                  echo 'Full Stack';
-                  break;
-
-                  default:
+            case 'be':
+              echo 'Back End';
+              break;
+            case 'fs':
+              echo 'Full Stack';
+              break;
+            default:
               echo 'Por favor elegi un area';
-                    break;
+            break;
           }
-         } ?>
+         } ?> 
+
+         <hr>
+
+       <?php   //validar radio buttons ?>
+
+       <?php  $opciones = array(
+                      'pres' => 'Presencial',
+                      'online' => 'En Línea'
+                  );?>
+
+                  <h2>Tipo de curso elegido</h2>
+
+
+       <?php if(isset($_POST['opciones']) && array_key_exists($_POST['opciones'],$opciones)){
+           $tipo_curso = $_POST['opciones'];
+           switch ($tipo_curso) {
+             case 'pres':
+              echo 'Elegiste presencial';
+               break;
+              case 'online':
+                echo 'Elegiste en linea';
+                break;
+               // default:
+               // echo 'no elegiste tipo de curso';
+             // break;
+                
+     }
+       }else {
+         echo 'no elegiste tipo de curso';
+       } ?>
+
+       
     </div>
   </body>
 </html>

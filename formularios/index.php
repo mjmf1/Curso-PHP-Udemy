@@ -83,7 +83,7 @@
 
                   <?php foreach($opciones as $key => $opcion) {
                     echo "<div class='campo'>";
-                    echo "<input type='radio' name='opciones' value='$key' > $opcion";
+                    echo "<input type='radio' name='opciones' value='$key'> $opcion";
                     echo "</div>";
                   } ?>
             </div>
